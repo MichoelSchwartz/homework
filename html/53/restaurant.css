@@ -1,0 +1,36 @@
+p {
+    color:cyan;
+    font-size: 24px;
+}
+
+h1 {
+    color: cyan;
+    font-size: 3em;
+
+}
+h3 {
+    color: cyan;
+}
+
+header {
+    border: 15px rgb(0, 247, 255);
+    border-width: 10px;
+    border-style: inset;
+    border-color: rgb(0, 247, 255);
+    border-top-color: rgb(0, 247, 255);
+  
+}
+
+html {
+    text-align: center;
+    background-color:aliceblue;   
+    background-image: url('images/santorini3.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
+}
+nav{
+    font-size: 24px;
+}
+
+
