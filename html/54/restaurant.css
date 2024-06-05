@@ -1,0 +1,77 @@
+html {
+    text-align: center;
+    background-color: aliceblue;
+    background-image: url('images/santorini3.jpg');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
+}
+
+p {
+    font-size: 24px;
+}
+
+h1 {
+    color: black;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px grey;
+
+}
+
+h3 {
+    color: black;
+}
+
+header {
+    border: 15px rgb(0, 247, 255);
+    border-width: 10px;
+    border-style: inset;
+    border-color: rgb(0, 247, 255);
+    border-top-color: rgb(0, 247, 255);
+    border-radius: 16px;
+    background-color: antiquewhite;
+
+}
+
+nav {
+    font-size: 24px;
+}
+
+a {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px;
+    text-decoration-line: none;
+    background-color: antiquewhite;
+    color: black;
+
+}
+
+a:hover {
+    color: azure;
+}
+
+.menu-pic {
+    height: 300px;
+    width: 300px;
+}
+
+div {
+    background-color: antiquewhite;
+    max-width: 600px;
+    padding: auto;
+    margin: auto;
+    margin-top: 5px;
+    border: 2px solid cyan;
+    border-radius: 16px;
+}
+
+#buttonSpace {
+    margin: 5px;
+}
+
+div span {
+    text-shadow: 3px 3px 3px grey;
+    color: darkcyan;
+
+}
