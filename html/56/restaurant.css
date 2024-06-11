@@ -1,0 +1,88 @@
+html {
+    text-align: center;
+    background-color: aliceblue;
+    background-image: url('images/santorini3.jpg');
+    image-rendering: crisp-edges;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+p {
+    font-size: 24px;
+    font-family: "Permanent Marker";
+}
+
+h1 {
+    color: black;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px grey;
+    font-family: Herculanum;
+
+}
+
+h3 {
+    color: black;
+    font-family: Herculanum;
+}
+
+header {
+    border: 15px rgb(0, 247, 255);
+    border-width: 10px;
+    border-style: inset;
+    border-color: rgb(0, 247, 255);
+    border-top-color: rgb(0, 247, 255);
+    border-radius: 16px;
+    background-color: antiquewhite;
+    max-width: 50%;
+    margin: auto;
+
+}
+
+nav {
+    font-size: 24px;
+}
+
+a {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+    text-decoration-line: none;
+    background-color: antiquewhite;
+    color: black;
+    font-family: "Nanum Pen Script", cursive;
+
+}
+
+a:hover {
+    color: azure;
+}
+
+.menu-pic {
+    height: 300px;
+    width: 300px;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+}
+
+div {
+    background-color: antiquewhite;
+    max-width: 600px;
+    padding: auto;
+    margin: auto;
+    margin-top: 5px;
+    border: 2px solid cyan;
+    border-radius: 16px;
+}
+
+#buttonSpace {
+    margin: 5px;
+}
+
+div span {
+    text-shadow: 3px 3px 3px grey;
+    color: darkcyan;
+
+}
