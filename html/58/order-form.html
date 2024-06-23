@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online</title>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="restaurant.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div>
+                <h1>Santorini</h1>
+                <h3>Upscale Dairy Dining</h5>
+            </div>
+            <nav>
+                <a href="menu.html">Our Menu </a>
+                <a href="order-form.html">Order Online</a>
+                <a href="reservation.html">Book Reservation</a>
+                <a href="about-us">About Us</a>
+            </nav>
+        </header>
+    </div>
+    <div class="body">
+        <h1>Order Online</h1>
+        <form method="post">
+            <label>
+                First Name:
+                <input name="first" required />
+            </label>
+            <label>
+                Last Name:
+                <input name="last" required />
+            </label>
+            <label>
+                Phone number:
+                <input type="tel" name="telephone" />
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" />
+            </label>
+            <h4>
+                Please list the items you would like to order:
+            </h4>
+            <label name="order items">
+                <textarea name="order items"></textarea>
+            </label>
+            <input type="submit" value="Complete Order" />
+        </form>
+    
+    </div>
+    
+</body>
+
+</html>

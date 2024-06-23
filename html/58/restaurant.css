@@ -1,0 +1,148 @@
+html {
+    background-color: aliceblue;
+    background-image: url('images/santorini3.jpg');
+    image-rendering: crisp-edges;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@media screen and (width <= 945px) {
+    .header {
+      position: static;
+    }
+    header > nav {
+        position: static;
+    }
+
+  }
+
+  @media screen and (width >= 945px) {
+    .header {
+      position: fixed;
+    }
+    header > nav {
+        position: absolute; 
+    }
+  }
+
+p {
+    font-size: 24px;
+    font-family: "Permanent Marker";
+}
+
+h1 {
+    color: black;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px grey;
+    font-family: Herculanum;
+
+}
+
+h3 {
+    color: black;
+    font-family: Herculanum;
+}
+
+header {
+    border: 15px rgb(0, 247, 255);
+    border-width: 10px;
+    border-style: inset;
+    border-color: rgb(0, 247, 255);
+    border-radius: 16px;
+    background-color: antiquewhite;
+    text-align: left;
+
+}
+div {
+    padding: auto;
+    margin-top: 5px;
+    margin: auto;
+}
+
+
+header > div {
+
+    border: none;
+    text-align: left;
+    position: relative;
+    left: 2em;
+    background-color: none;
+}
+div > h3{
+    margin-top: none;
+}
+h4{
+    background-color: antiquewhite;
+    border: 2px, solid, black;
+    max-width: 30%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header > nav {
+    font-size: 24px;
+    text-align: right;
+    right: 2em;
+    top: 2em;
+}
+
+.header {
+    width: 100%;
+    top: 0px;
+    right: 0px;
+}
+.body {
+    margin-top: 12em;
+}
+
+a {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+    text-decoration-line: none;
+    background-color: antiquewhite;
+    color: black;
+    font-family: "Nanum Pen Script", cursive;
+
+}
+
+a:hover {
+    color: azure;
+}
+body {
+    text-align: center;
+}
+label {
+    display: block;
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu-pic {
+    height: 300px;
+    width: 300px;
+    border: 2px solid darkcyan;
+    border-radius: 16px;
+}
+.menuItem {
+    background-color: antiquewhite;
+    max-width: 600px;
+    border: 2px, solid, cyan;
+    border-radius: 16px;
+    margin-top: 1em;
+  
+}
+
+
+
+#buttonSpace {
+    margin: 5px;
+}
+
+div span {
+    text-shadow: 3px 3px 3px grey;
+    color: darkcyan;
+
+}
