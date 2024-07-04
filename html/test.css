@@ -1,0 +1,195 @@
+* {
+    font-family: helvetica, arial, sans-serif;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    margin: 0px;
+}
+
+nav {
+    background-color: black;
+    text-align: left;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    line-height: 3em;
+    margin: .75em;
+    width: 100px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+nav ul,
+footer p {
+    grid-column-start: 2;
+    padding: 0px;
+}
+
+nav ul {
+    translate: -12px;
+}
+
+li {
+    display: inline;
+}
+
+
+header {
+    margin-top: 3em;
+    background-color: lightgrey;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 16px;
+}
+
+header h2 {
+    text-transform: uppercase;
+}
+
+header span {
+    font-style: italic;
+}
+
+footer {
+    position: fixed;
+    line-height: 3em;
+    background-color: black;
+    color: white;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+}
+
+.pgEnd {
+    margin-bottom: 4em;
+}
+
+@media(width < 800px) {
+    .pics {
+        display: block;
+        text-align: justify;
+    }
+
+    .pics img,
+    video {
+        max-width: fit-content;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .pics div p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+
+@media (width > 800px) {
+    .pics {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+    }
+}
+
+
+
+.pics img,
+video {
+    width: 100%;
+}
+
+div h2 {
+    text-align: center;
+}
+
+#Sign_Up {
+    background-color: lightgrey;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    border-radius: 16px;
+}
+
+#Sign_Up h2,
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+input {
+    box-shadow: 3px 3px 3px black;
+    border-radius: 8px;
+}
+
+#Financials h2 {
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border: 2px, solid, black;
+    border-collapse: collapse;
+    text-align: right;
+    table-layout: fixed;
+    width: 200px;
+}
+
+#Financials tr:hover {
+    background-color: blueviolet;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    table-layout: fixed;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+td:nth-child(6),
+tfoot td:nth-child(2) {
+    color: red;
+}
+
+th {
+    text-align: center;
+}
+
+tfoot td:nth-child(1) {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+caption {
+    margin: 1em;
+    font-size: 1.25em;
+}
