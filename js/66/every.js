@@ -1,10 +1,10 @@
 'use strict';
-function every(anArray, callback){
+function every(anArray, callback) {
     for (let i = 0; i < anArray.length; i++) {
-        if(callback(anArray[i])){
+        if (callback(anArray[i])) {
             continue;
-        }  
-        else{
+        }
+        else {
             return false;
         }
     }
@@ -12,17 +12,17 @@ function every(anArray, callback){
 }
 
 function isItUppercase(letter) {
-    if (letter === letter.toUpperCase()){
+    if (letter === letter.toUpperCase()) {
         return true;
-    } 
-    return false;       
+    }
+    return false;
 }
 
 function isItLowercase(letter) {
-    if (letter !== letter.toUpperCase()){
+    if (letter !== letter.toUpperCase()) {
         return true;
-    } 
-    return false;       
+    }
+    return false;
 }
 
 const letters = ['a', 'b', 'c'];

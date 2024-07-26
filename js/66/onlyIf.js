@@ -6,8 +6,8 @@ function onlyIf(anArray, callback, action) {
         }
     }
 }
-function print(text) {
-    console.log(text)
+function print2(text) {
+    console.log(text);
 }
 function isItUppercase(letter) {
     if (letter === letter.toUpperCase()) {
@@ -16,4 +16,4 @@ function isItUppercase(letter) {
     return false;
 }
 const letters3 = ['a', 'B', 'c', 'D'];
-onlyIf(letters3, isItUppercase, print);
+onlyIf(letters3, isItUppercase, print2);
