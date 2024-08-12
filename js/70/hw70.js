@@ -14,7 +14,6 @@
     let interval;
     const theButton = document.querySelector('#theButton');
     theButton.addEventListener('click', e => {
-        e.stopPropagation();
         if (!interval) {
             interval = setInterval(changeColor, 1000);
             e.target.innerText = 'Stop the color changing';
