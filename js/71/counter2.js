@@ -1,4 +1,4 @@
-window.app = function (theModule) {
+window.app = (function (theModule) {
     'use strict';
     let countersCreated = 0;
 
@@ -9,6 +9,7 @@ window.app = function (theModule) {
             return count++;
         }
         function getCount() {
+            // SL - getter should get, let caller decide if they want to log...
             console.log(count);
         }
         return {
@@ -20,9 +21,9 @@ window.app = function (theModule) {
         console.log(countersCreated);
     };
     return theModule;
-}(window.app || {});
+}(window.app || {}));
 
-const counter1 = window.app.createCounter();
+/*const counter1 = window.app.createCounter();
 const counter2 = window.app.createCounter();
 
 counter1.increment();
@@ -33,4 +34,4 @@ counter2.increment();
 counter1.getCount();
 counter2.getCount();
 
-window.app.getCountersCreated();
+window.app.getCountersCreated();*/

@@ -14,3 +14,5 @@ window.app.getCount();
 testCounter1.getCount();
 testCounter2.getCount();
 
+// SL - nice!
+// SL - grade - 100

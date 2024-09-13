@@ -13,3 +13,5 @@
     const numsArray = [2, 4, 6, 8];
     console.log(numsArray, myMap(numsArray, doubleIt));
 })();
+
+// SL - nice!
