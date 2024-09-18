@@ -1,0 +1,5 @@
+[
+    { "name": "steak", "url": "steak.json" },
+    { "name": "pizza", "url": "pizza.json" },
+    { "name": "pancakes", "url": "pancakes.json" }
+]

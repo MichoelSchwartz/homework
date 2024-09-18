@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="radioButtons">
+        <input type="radio" id="recipeChoice1" name="recipes" />
+        <label id= recipe1id for="recipeChoice1"></label>
+        <input type="radio" id="recipeChoice2" name="recipes" />
+        <label id= recipe2id for="recipeChoice1"></label>
+        <input type="radio" id="recipeChoice3" name="recipes" />
+        <label id= recipe3id for="recipeChoice1"></label>
+        <button id="recipeOptionLoader">Load Recipe Options</button>
+    </div>
+    <div>
+        <h2 id="recipeName"></h2>
+    </div>
+    <div id="recipePic">
+        <img src="" alt="recipe image">
+    </div>
+    <h2>Ingredients</h2>
+    <div id="ingredients"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="hw76.js"></script>
+</body>
+
+</html>

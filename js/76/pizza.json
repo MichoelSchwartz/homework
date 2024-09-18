@@ -1,0 +1,11 @@
+[
+    {
+        "name": "pizza",
+        "ingredients": [
+            "1 package Mazor's frozen pizza dough",
+            "1 can Don Pepino pizza sauce ",
+            "6 oz shredded mozzarella cheese"
+        ],
+        "pic": "pizza.jpeg"
+    }
+]
