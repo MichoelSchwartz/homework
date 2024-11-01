@@ -5,14 +5,18 @@
     let positionStyle;
     let topStyle;
     let leftStyle;
+    let parts = Array.from(document.querySelectorAll('.parts'));
+    console.log(parts);
 
 
     const style = JSON.parse(localStorage.style || '[]');
     if (style.length > 0) {
         style.forEach(element => {
-            element.item.style.position = element.positionStyle;
-            element.item.style.top = element.topStyle;
-            element.item.style.left = element.leftStyle;
+            const result = parts.filter((part) => part.currentSrc === element.item);
+            console.log(result);
+            result[0].style.position = element.positionStyle;
+            result[0].style.top = element.topStyle;
+            result[0].style.left = element.leftStyle;
         });
     }
 
@@ -33,9 +37,9 @@
         }
     });
 
-    document.addEventListener('mouseup', e => {
-        console.log(e);
-        style.push({ item: `${dragging}`, positionStyle: positionStyle, topStyle: topStyle, leftStyle: leftStyle });
+    document.addEventListener('mouseup', () => {
+        style.push({ item: `${dragging.src}`, positionStyle: positionStyle, topStyle: topStyle, leftStyle: leftStyle });
+        console.log(dragging.src);
         localStorage.style = JSON.stringify(style);
         dragging = null;
     });
