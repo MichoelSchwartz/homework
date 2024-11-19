@@ -22,7 +22,7 @@
   let y = 0;
   const apples = [];
   for (let i = 0; i < 10; i++) {
-    apples.push({ x: getRandomNumber(0, theCanvas.width), y: getRandomNumber(0, theCanvas.height) });
+    apples.push({ x: getRandomNumber(theCanvas.width), y: getRandomNumber(theCanvas.height) });
   }
   //let appleX = getRandomNumber(0, theCanvas.width);
   //let appleY = getRandomNumber(0, theCanvas.height);
@@ -72,14 +72,13 @@
   function checkForOutOfBounds() {
     if (x < 0 - SNAKE_SIZE || x > theCanvas.width || y < 0 || y > theCanvas.height) {
       clearInterval(theInterval);
-      theInterval = null;
       context.fillText('You went out of bounds. Game Over', theCanvas.width / 2, theCanvas.height / 2);
     }
   }
 
 
-  function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * ((max - min) + 1)) + min;
+  function getRandomNumber(max) {
+    return Math.floor(Math.random() * max + 1);
   }
 
 }());
