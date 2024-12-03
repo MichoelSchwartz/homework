@@ -5,19 +5,19 @@ export default class App extends Component {
   state = {
     current1: '',
     current2: '',
-    total: '',
     operator: '',
-    isValueOneEntered: false
+    isValueOneEntered: false,
+    operatorIsEntered: false
   }
 
   handleClick = (e) => {
-    let {current1, current2} = this.state;
+    let { current1, current2 } = this.state;
     console.log(e);
     if (!this.state.isValueOneEntered) {
       this.setState({
         current1: current1 += e.target.innerText
       });
-    }else{
+    } else if (this.state.operatorIsEntered) {
       this.setState({
         current2: current2 += e.target.innerText
       });
@@ -28,7 +28,8 @@ export default class App extends Component {
     console.log(e);
     this.setState({
       operator: e.target.innerText,
-      isValueOneEntered: true
+      isValueOneEntered: true,
+      operatorIsEntered: true
     });
   }
 
@@ -37,8 +38,8 @@ export default class App extends Component {
       current1: '',
       current2: '',
       operator: '',
-      total: '',
-      isValueOneEntered: false
+      isValueOneEntered: false,
+      operatorIsEntered: false
     })
   }
 
@@ -47,27 +48,30 @@ export default class App extends Component {
     console.log(e);
     if (operator === '+') {
       this.setState({
-        total: parseInt(current1) + parseInt(current2)
+        current1: parseInt(current1) + parseInt(current2)
       });
     } else if (operator === '-') {
       this.setState({
-        total: parseInt(current1) - parseInt(current2)
+        current1: parseInt(current1) - parseInt(current2)
       });
     } else if (operator === 'x') {
       this.setState({
-        total: parseInt(current1) * parseInt(current2)
+        current1: parseInt(current1) * parseInt(current2)
       });
     } else if (operator === '÷') {
       this.setState({
-        total: parseInt(current1) / parseInt(current2)
+        current1: parseInt(current1) / parseInt(current2)
       });
     }
-
+    this.setState({
+      current2: '',
+      operator: '',
+      operatorIsEntered: false
+    })
   }
 
   render() {
-    const display = this.state.total;
-    const {current1, current2, operator} = this.state;
+    const { current1, current2, operator } = this.state;
     return (
       <>
         <button onClick={
@@ -119,7 +123,6 @@ export default class App extends Component {
           this.clearHandleClick
         }>C</button>
         <div>{current1} {operator} {current2}</div>
-        <div>{display}</div>
       </>
     )
   }
