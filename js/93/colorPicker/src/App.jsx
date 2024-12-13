@@ -8,6 +8,9 @@ function App() {
     font: 'cursive'
   })
 
+  const fonts = ['Arial','cursive','Helvetica','Tahoma','Cambria','Geneva'];
+  const options = fonts.map(f => <option key={f} value={f}>{f}</option>)
+
   return (
     <div className="background" style={{ backgroundColor: state.bgColor, color: state.textColor, fontFamily: state.font }}>
       <div>pick a background color</div>
@@ -16,12 +19,7 @@ function App() {
       <input type="color" onChange={e => setState({ ...state, textColor: e.target.value })} />
       <div>choose a font</div>
       <select name="fonts" id="fonts" onChange={e => setState({ ...state, font: e.target.value })}>
-        <option value="Arial">Arial</option>
-        <option value="cursive">cursive</option>
-        <option value="Helvetica">Helvetica</option>
-        <option value="Tahoma">tahoma</option>
-        <option value="Cambria">Cambria</option>
-        <option value="Geneva">Geneva</option>
+      {options}
       </select>
     </div>
   )
