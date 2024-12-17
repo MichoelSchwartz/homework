@@ -3,13 +3,13 @@ import './App.css'
 
 function App() {
   const [state, setState] = useState({
-    bgColor: 'green',
+    bgColor: 'yellow',
     textColor: 'blue',
-    font: 'cursive'
+    font: ''
   })
 
-  const fonts = ['Arial','cursive','Helvetica','Tahoma','Cambria','Geneva'];
-  const options = fonts.map(f => <option key={f} value={f}>{f}</option>)
+  const fonts = ['Arial', 'Cursive', 'Courier New', 'Tahoma', 'Cambria', 'Geneva', 'Chalkboard'];
+  const options = fonts.map(f => <option key={f} value={f}>{f}</option>);
 
   return (
     <div className="background" style={{ backgroundColor: state.bgColor, color: state.textColor, fontFamily: state.font }}>
@@ -19,7 +19,8 @@ function App() {
       <input type="color" onChange={e => setState({ ...state, textColor: e.target.value })} />
       <div>choose a font</div>
       <select name="fonts" id="fonts" onChange={e => setState({ ...state, font: e.target.value })}>
-      {options}
+        <option value="select">select a font</option>
+        {options}
       </select>
     </div>
   )
