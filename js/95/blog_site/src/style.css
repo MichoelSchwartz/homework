@@ -1,0 +1,75 @@
+#app {
+  text-align: center;
+  background-color: antiquewhite;
+  margin-top: 1em;
+  padding-top: .75em;
+}
+
+.container {
+  border: black, 1px, solid;
+  width: 25%;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 16px;
+}
+
+.user:hover,
+.post button:hover {
+  cursor: pointer;
+}
+
+.user {
+  background-color: lightcyan;
+}
+
+.post {
+  background-color: lightgreen;
+}
+
+.comment {
+  background-color: lightgoldenrodyellow;
+}
+
+.post p,
+.comment p {
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post h5,
+.comment h5 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 2em;
+  align-items: center;
+  padding-bottom: 1em;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: cursive;
+}
+header button {
+  width: 4em;
+  margin: auto;
+  grid-column: 1/2;
+}
+
+header h1 {
+  margin: auto;
+  grid-column: 2/3;
+}
+
+.name,
+.website,
+.companyInfo {
+  pointer-events: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
