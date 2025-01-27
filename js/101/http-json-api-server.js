@@ -2,9 +2,9 @@
 const http = require('http');
 
 const server = http.createServer(function (req, res) {
-    const url = new URL(req.url);
+    const url = new URL(`http://${process.env.HOST ?? 'localhost'}${req.url}`);
 
-    const date = new Date(url.searchParams.entries[0].iso);
+    const date = new Date(url.searchParams.get('iso'));
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
